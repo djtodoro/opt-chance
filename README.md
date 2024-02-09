@@ -1,5 +1,5 @@
 # opt-chance
-An LLVM-based tool used to compare binaries compiled with different compilers in order to find optimizations oportunities. It relies on Debug Info (`DWARF` only at the moment).
+An LLVM-based tool used for comparing binaries compiled with different compilers in order to find optimizations oportunities. It relies on Debug Info (`DWARF` only at the moment).
 This is still a WIP.
 
 ## Clone
