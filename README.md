@@ -1,5 +1,5 @@
 # opt-chance
-An LLVM-based tool used to compare binaries compiled with different compilers in order to find optimizations oportunities.
+An LLVM-based tool used to compare binaries compiled with different compilers in order to find optimizations oportunities. It relies on Debug Info (`DWARF` only at the moment).
 This is still a WIP.
 
 ## Clone
@@ -44,6 +44,8 @@ $ ninja opt-chance
 ```
 
 ## Usage
+
+First of all, both `a.out` and `a.out` need to be comipled with debug info (`-g`), since our tool reads debug info in order to find canindates for optimizations.
 
 ```
 $ ../build_tool/opt-chance a2.out a.out 
