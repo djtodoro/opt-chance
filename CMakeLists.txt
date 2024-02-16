@@ -13,7 +13,7 @@ set(OPT_CHANCE_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR})
 set(EXTERN_LLVM_SRC_DIR ON CACHE STRING "")
 
 if (NOT EXISTS "${OPT_CHANCE_SOURCE_DIR}/llvm-project/llvm")
-     if (NOT EXISTS "${EXTERN_LLVM_SRC_DIR/llvm}")
+     if (NOT EXISTS "${EXTERN_LLVM_SRC_DIR}/llvm")
           message(FATAL_ERROR "The llvm submodule was not downloaded! Please use --recurse-submodules when cloning the project or use EXTERN_LLVM_SRC_DIR cmake variable.")
      endif()
 endif()
